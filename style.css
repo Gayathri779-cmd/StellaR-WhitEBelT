@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    padding: 30px;
+    margin: 0;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px lightgray;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Transaction Status */
+#transactionStatus {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Transaction Hash */
+#transactionHash {
+    margin-top: 10px;
+    word-break: break-word;
+}
+
+#transactionHash a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+#transactionHash a:hover {
+    text-decoration: underline;
+}
+
+/* Transaction History */
+#transactionHistory {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+#transactionHistory li {
+    background: #f5f5f5;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    border-left: 4px solid #4CAF50;
+    word-break: break-word;
+    line-height: 1.6;
+}
+
+#transactionHistory a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+#transactionHistory a:hover {
+    text-decoration: underline;
+}
