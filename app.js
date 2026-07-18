@@ -52,19 +52,11 @@ connectBtn.addEventListener("click", connectWallet);
 
 async function connectWallet() {
   try {
-    const connected = await isConnected();
-
-    console.log("isConnected():", connected);
-
-    if (!connected.isConnected) {
-      await requestAccess();
-    }
-
-    const result = await getAddress();
+    const result = await requestAccess();
 
     console.log(result);
 
-    if (!result.address) {
+    if (result.error) {
       walletStatus.innerHTML = "❌ Wallet connection failed";
       return;
     }
@@ -73,8 +65,6 @@ async function connectWallet() {
 
     walletStatus.innerHTML = "✅ Wallet Connected";
     walletAddress.innerHTML = publicKey;
-
-    console.log("Public Key:", publicKey);
 
   } catch (err) {
     console.error(err);
