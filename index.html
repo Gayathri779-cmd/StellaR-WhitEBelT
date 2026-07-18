@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellar White Belt dApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>⭐ Stellar White Belt dApp</h1>
+
+    <!-- Wallet -->
+    <div class="card">
+
+        <h2>Wallet</h2>
+
+        <button id="connectBtn">Connect Wallet</button>
+        <button id="disconnectBtn">Disconnect Wallet</button>
+
+        <p id="walletStatus">Wallet Not Connected</p>
+
+        <p id="walletAddress"></p>
+
+    </div>
+
+    <!-- Balance -->
+    <div class="card">
+
+        <h2>Balance</h2>
+
+        <button id="balanceBtn">Refresh Balance</button>
+
+        <p id="balance">Balance : --</p>
+
+    </div>
+
+    <!-- Send XLM -->
+    <div class="card">
+
+        <h2>Send XLM</h2>
+
+        <input
+            id="destination"
+            placeholder="Destination Address">
+
+        <br><br>
+
+        <input
+            id="amount"
+            type="number"
+            step="0.0000001"
+            placeholder="Amount">
+
+        <br><br>
+
+        <button id="sendBtn">Send XLM</button>
+
+        <p id="transactionStatus"></p>
+
+        <!-- Transaction Hash -->
+        <div id="transactionHash"></div>
+
+        <br>
+
+        <!-- Transaction History -->
+        <h3>Transaction History</h3>
+
+        <ul id="transactionHistory"></ul>
+
+    </div>
+
+    <script type="module" src="app.js"></script>
+
+</body>
+
+</html>
